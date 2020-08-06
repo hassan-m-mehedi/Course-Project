@@ -1,0 +1,29 @@
+Codebook
+=========
+
+run_analysis.R file performs the following functions:
+
+1. downloads the dataset
+2. unzips the datasets into UCI HAR DATASET folder
+3. reads the text files and assigns them into following variables:
+  
+  features: features.txt is read into this variable
+  
+  activities: activity_labels.txt is read into this variable
+  
+  subject_test: Subject_test.txt is read into this variable
+  
+  subject_train: Subject_train is read into this variable
+  
+  x_test: X_test.txt is read into this variable
+  
+  x_train: X_train.txt is read into this variable
+  
+  y_test: y_test.txt is read into this variable
+  
+  y_train: y_train is read into this variable
+  
+4. merges the datasets into one, "merged_data" variabe
+5. extracts mean and standard deviation for each measurement and assigns them into extracted_data variable.
+6. names the activities in datasets using descriptive activity names
+7. creates a second and indepent dataset named "independent data.txt"
